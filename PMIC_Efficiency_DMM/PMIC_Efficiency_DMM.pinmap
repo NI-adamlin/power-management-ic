@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.6">
+	<Instruments>
+		<NIDCPowerInstrument name="4137" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup1" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="4139" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup2" />
+		</NIDCPowerInstrument>
+		<NIDmmInstrument name="4071" />
+	</Instruments>
+	<Pins>
+		<DUTPin name="Vin" />
+		<DUTPin name="Eload" />
+		<DUTPin name="Vout" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Sites>
+		<Site siteNumber="0" />
+	</Sites>
+	<Connections>
+		<Connection pin="Eload" siteNumber="0" instrument="4139" channel="0" />
+		<Connection pin="Vin" siteNumber="0" instrument="4137" channel="0" />
+		<Connection pin="Vout" siteNumber="0" instrument="4071" channel="0" />
+	</Connections>
+</PinMap>
